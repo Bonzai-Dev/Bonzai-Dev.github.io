@@ -1,0 +1,108 @@
+#hero::before
+{
+    content: "";
+    animation-name: herosFading;
+    animation-duration: 30s; 
+    animation-iteration-count: infinite;
+}
+
+.heroBackground {
+    filter: brightness(0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh
+}
+
+#heroBackgroundFirst {
+    background-image: linear-gradient(0deg, var(--bs-body-bg), rgba(255,255,255,0)), url(../images/heros/Canadarm.jpg);
+}
+
+#heroBackgroundSecond {
+    background-image: linear-gradient(0deg, var(--bs-body-bg), rgba(255,255,255,0));
+    opacity: 0;
+}	
+
+#heroBackgroundThird {
+    background-image: linear-gradient(0deg, var(--bs-body-bg), rgba(255,255,255,0));
+    opacity: 0;
+}
+
+.heroText
+{
+    position: absolute;
+    width: 100%;
+    font-size: 1.2em;
+    margin-top: 36vh;
+    text-align: center;
+}
+
+.heroText p
+{
+    font-style: italic;
+    font-size: 0.8em;
+    transition-duration: 1.8s;
+}
+
+header {
+    scroll-snap-align: start;
+}
+
+main section {
+    scroll-snap-align: start;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+main section div {
+    transform: scale(0.8);
+}
+
+main section img {
+    float: left; 
+    height: auto; 
+    width: 125px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
+.teamMates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.aboutUsContainer:not(.noPadding) {
+    padding-top: 1.2%;
+}
+
+.aboutUsContainer div img {
+    border-radius: 100%;
+    height: auto;
+    width: 80px;
+}
+
+.aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutUsText {
+    padding-top: 2.5%;
+    width: 100%;
+}
